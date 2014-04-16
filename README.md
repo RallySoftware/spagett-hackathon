@@ -1,5 +1,5 @@
 ## HERRO HACKNIGHT! ##
-** SPAGETT!! **
+**SPAGETT!!**
 
 ## Contributors ##
 * Chris Driscol
