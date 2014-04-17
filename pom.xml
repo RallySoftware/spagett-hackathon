@@ -11,9 +11,7 @@
 
 	<modules>
 		<module>badges-mbean</module>
-		<!--<module>badges-hawtio-plugin</module>
-		<module>badges-api</module>
-		<module>badges-core</module>-->
+		<module>badges-hawtio-plugin</module>
 	</modules>
 
 </project>
