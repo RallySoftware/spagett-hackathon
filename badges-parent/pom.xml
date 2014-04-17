@@ -159,6 +159,20 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
+
+    <repositories>
+        <repository>
+            <id>fusesource.public</id>
+            <name>FuseSource Public Repo - External</name>
+            <url>http://repository.jboss.org/nexus/content/groups/fs-public</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
 </project>
