@@ -193,9 +193,9 @@
                     <outputFileNameMapping>@{artifactId}@-@{baseVersion}@@{dashClassifier?}@.@{extension}@</outputFileNameMapping>
                     <packagingExcludes>**/classes/OSGI-INF/**</packagingExcludes>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <archive>
+                    <!--<archive>
                         <manifestFile>${basedir}/target/${project.artifactId}-${project.version}/META-INF/MANIFEST.MF</manifestFile>
-                    </archive>
+                    </archive>-->
                     <webResources>
                         <resource>
                             <filtering>true</filtering>
