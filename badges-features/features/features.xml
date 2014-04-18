@@ -11,4 +11,8 @@
     <feature name="badges-mbean" version="${project.version}" resolver="(obr)">
         <bundle>mvn:badges/badges-mbean/${project.version}</bundle>
     </feature>
+
+    <feature name="badges-hawtio-plugin" version="${project.version}" resolver="(obr)">
+        <bundle>war:mvn:badges/badges-hawtio-plugin/${project.version}</bundle>
+    </feature>
 </features>
