@@ -1,0 +1,15 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">
+        <command name="badge/earn">
+            <action class="badges.core.commands.EarnCommand"/>
+        </command>
+        <command name="badge/remove">
+            <action class="badges.core.commands.RemoveCommand"/>
+        </command>
+        <command name="badge/register">
+            <action class="badges.core.commands.RegisterCommand"/>
+        </command>
+    </command-bundle>
+
+</blueprint>

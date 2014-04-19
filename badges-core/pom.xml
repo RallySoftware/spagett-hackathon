@@ -12,15 +12,9 @@
     </parent>
 
     <artifactId>badges-core</artifactId>
-    <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.compendium</artifactId>
-            <version>4.3.0</version>
-        </dependency>
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.eventadmin</artifactId>
@@ -41,10 +35,13 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Service-Component>
+                            *
+                        </Service-Component>
                         <Import-Package>
+                            org.osgi.service.component;version="[1.1,2)",
                             *
                         </Import-Package>
-                        <Bundle-Activator>badges.core.activator.Activator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>

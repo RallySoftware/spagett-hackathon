@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<features xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="rens-features"
+<features xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="spagett-features"
           xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
           xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0">
 
@@ -8,12 +8,13 @@
     </feature>
 
     <feature name="badges-core" version="${project.version}" resolver="(obr)">
-        <bundle>mvn:badges/badges-core/${project.version}</bundle>
+        <feature>eventadmin</feature>
+        <feature>scr</feature>
+        <bundle>mvn:badges/badges-core</bundle>
     </feature>
 
     <feature name="badges-mbean" version="${project.version}" resolver="(obr)">
-        <feature>eventadmin</feature>
-        <bundle>mvn:badges/badges-mbean</bundle>
+        <bundle>mvn:badges/badges-mbean/${project.version}</bundle>
     </feature>
 
     <feature name="badges-hawtio-plugin" version="${project.version}" resolver="(obr)">
