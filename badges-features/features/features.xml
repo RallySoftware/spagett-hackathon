@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<features name="rens-features" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<features xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="rens-features"
+          xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
           xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0">
-
 
     <feature name="groovy" version="${groovy.version}" resolver="(obr)">
         <bundle>mvn:org.codehaus.groovy/groovy-all/${groovy.version}</bundle>
     </feature>
 
+    <feature name="badges-core" version="${project.version}" resolver="(obr)">
+        <bundle>mvn:badges/badges-core/${project.version}</bundle>
+    </feature>
+
     <feature name="badges-mbean" version="${project.version}" resolver="(obr)">
-        <bundle>mvn:badges/badges-mbean/${project.version}</bundle>
+        <feature>eventadmin</feature>
+        <bundle>mvn:badges/badges-mbean</bundle>
     </feature>
 
     <feature name="badges-hawtio-plugin" version="${project.version}" resolver="(obr)">
